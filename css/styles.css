@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+}
+
+/* section{
+} */
+
+header nav{
+    background-color: aqua;
+    text-align: center;
+    list-style: none;
+}
+
+header li{
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    
+}
+
+header ul li a:link, header ul li a:visited{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+header ul li:hover {
+    background-color: rgb(61, 61, 248);
+    letter-spacing: 3px;
+}
+
+header ul li:hover a{
+    color:white
+}
+
+section:nth-of-type(odd){
+    background-color:rgb(133, 255, 212);
+}
+
+main h1, h2, h3{
+    text-align: center;
+}
+
+section{
+    padding: 30px 0px;
+}
+
+.introducao{
+    padding-top: 0px;
+}
+
+main h1 {
+    margin: 40px 0px;
+    color: rgba(0, 0, 0, 0.733);
+    font-size: 40px;
+}
+
+main h2, h3{
+    color: orangered;
+}
+
+.introducao p{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.container div {
+    padding: 20px;
+}
+
+.destinos h2{
+    margin: 30px 0px 10px 0px;
+    transition: 0.5s;
+}
+
+.destinos .container{
+    gap: 20px;
+}
+
+.destinos .container div {
+    width: 100%; 
+    position: relative;
+    padding: 20px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.destinos .container div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.egito::before {
+    background-image: url('../img/praia.jpg');
+}
+
+.cancun::before {
+    background-image: url('../img/peru.jpg');
+}
+
+.paris::before {
+    background-image: url('../img/salvador.jpg');
+}
+
+.quemSouEu {
+    padding-top: 30px;
+}
+
+.quemSouEu img{
+    border-radius: 20px;
+    
+}
+.quemSouEu > div{
+    border-radius: 20px;
+    background-color:white;
+    border: 2px solid orangered;
+
+}
+.quemSouEu div div{
+}
+.quemSouEu div div:nth-of-type(1) {
+    width: 30%;
+}
+
+.quemSouEu div div:nth-of-type(2) {
+    width: 70%;
+}
+
+.quemSouEu p{
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.quemSouEu h2{
+    margin-bottom: 10px;
+}
+
+
+footer{
+    text-align: center;
+    padding: 20px 0px;
+}
+
