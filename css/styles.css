@@ -34,7 +34,8 @@ header ul li a:link, header ul li a:visited{
 }
 
 header ul li:hover {
-    background-color: rgb(61, 61, 248);
+    background-color: orange;
+    /* background-color: rgb(61, 61, 248); */
     letter-spacing: 3px;
 }
 
@@ -62,6 +63,11 @@ main h1 {
     margin: 40px 0px;
     color: rgba(0, 0, 0, 0.733);
     font-size: 40px;
+}
+
+main h3{
+    color: rgba(0, 0, 0, 0.733);
+
 }
 
 main h2, h3{
