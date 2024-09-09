@@ -63,6 +63,13 @@ main h1 {
     margin: 40px 0px;
     color: rgba(0, 0, 0, 0.733);
     font-size: 40px;
+    transition: 1s;
+}
+
+main .introducao:hover h1{
+    color: orangered;
+    letter-spacing: 3px;
+
 }
 
 main h3{
