@@ -113,7 +113,18 @@ main h2, h3{
     align-items: center;
     height: 200px;
     border-radius: 20px;
-    gap: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.destinos .container div:hover:before{
+    filter: brightness(0.5);
+    cursor: pointer;
+}
+
+.destinos .container div:hover{
+    cursor: pointer;
+    letter-spacing: 3px;
 }
 
 .destinos .container div::before {
@@ -125,7 +136,7 @@ main h2, h3{
     bottom: 0;
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
+    opacity: 1;
     z-index: -1;
     border-radius: 20px;
 }
