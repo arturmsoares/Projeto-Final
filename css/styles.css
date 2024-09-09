@@ -47,6 +47,21 @@ section:nth-of-type(odd){
     background-color:rgb(133, 255, 212);
 }
 
+.contato li{
+    list-style: none;
+}
+
+.contato {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid orangered;
+    padding: 10px;
+    background-color: white;
+    position: fixed;
+    top:100px;
+    right: 0px;
+}
+
 main h1, h2, h3{
     text-align: center;
 }
