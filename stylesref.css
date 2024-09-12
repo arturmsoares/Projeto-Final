@@ -162,13 +162,13 @@ main h2, h3{
     bottom: 0;
     background-size: cover;
     background-position: center;
-    opacity: 1;
     z-index: -1;
     border-radius: 20px;
 }
 
 .egito::before {
     background-image: url('../img/egito.jpg');
+    opacity: 0.5;
 }
 
 .cancun::before {

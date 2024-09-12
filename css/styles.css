@@ -1,5 +1,240 @@
 *{  margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* //marcação */
+
+/* .container{
+    border: solid 5px red;
+}
+
+section{
+    border: solid 2px black;
+}
+
+div {
+    border: solid 2px black
+} */
+
+
+
+/* header */
+
+header nav{
+    background-color: white;
+    text-align: center;
+    list-style: none;
+}
+
+header li{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    
+}
+
+header ul li a:link, header ul li a:visited{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+header ul li:hover {
+    background-color: orange;
+    letter-spacing: 3px;
+}
+
+header ul li:hover a{
+    color:white
+}
+
+
+
+/* estilos gerais */
+
+.contato li{
+    list-style: none;
+}
+
+.contato {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid orangered;
+    padding: 10px;
+    background-color: white;
+    position: fixed;
+    top:100px;
+    right: 0px;
+}
+
+section:nth-of-type(odd){
+    background-color:rgb(196, 255, 239);
+}
+
+section{
+    padding: 20px 0px;
+}
+
+
+.container {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.container div {
+    width: 100%;
+    padding: 20px;
+}
+
+main h1, h2{
+    text-align: center;
+    color: orangered;
+    padding-bottom: 20px;
+    transition: 0.5s;
+}
+
+
+main h1:hover, h2:hover{
+    letter-spacing: 3px;
+}
+
+main h3{
+   color: rgb(82, 82, 82);
+   padding-bottom: 20px; 
+}
+
+
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: orange;
+}
+
+
+/* estilos espcíficos */
+
+.introducao h1{
+    font-size: 30px;
+    padding-top: 30px;
+}
+
+.introducao p{
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    padding: 30px 0px;
+}
+
+.destinos .container{
+}
+
+.destinos .container div {
+    width: 100%; 
+    position: relative;
+    padding: 20px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    margin: 10px;
+}
+
+.destinos .container div:hover:before{
+    filter: brightness(0.5);
+    cursor: pointer;
+}
+
+.destinos .container div:hover{
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+
+.destinos .container div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.egito::before {
+    background-image: url('../img/egito.jpg');
+}
+
+.cancun::before {
+    background-image: url('../img/cancun.jpg');
+}
+
+.paris::before {
+    background-image: url('../img/paris.jpg');
+}
+
+.quemSouEu img{
+    border-radius: 10px;
+}
+.quemSouEu > div, .nacionais > div, .internacionais > div, .escolhaDestino > div, .roteiros > div{
+    border-radius: 20px;
+    background-color:white;
+    border: 3px solid orangered;
+}
+
+.quemSouEu p{
+    text-align: justify;
+    padding: 10px;
+}
+
+.personalizados, .paraisos{
+    text-align: center;
+}
+
+.nacionais > div, .internacionais > div{
+    align-items: center;
+}
+
+.escolhaDestino div , .roteiros div{
+    align-items: center;
+}
+
+/* footer */
+
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+}
+
+footer, footer a {
+    color: white;
+}
